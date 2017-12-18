@@ -12,7 +12,7 @@ class App extends Component {
     this.state = {
       movies: [],
       filtered: [],
-      minYear: 0,
+      minYear:0,
       maxYear: "",
       movieName: "",
       movieYear: "",
@@ -158,8 +158,8 @@ class App extends Component {
       <div className="App">
         <Heading/>
         <Filter  handleChange={this.handleChange}
-                 minYear={this.minYear}
-                 maxYear={this.maxYear}
+                 minYear={this.state.minYear}
+                 maxYear={this.state.maxYear}
                  handleYear={this.handleYear}/>
         <AddForm visible={this.state.visible}
                  handleInput={this.handleInput}
