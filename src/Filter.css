@@ -1,0 +1,10 @@
+input{
+  width:250px;
+  height:50px;
+  border:1px solid #efe51a;/*yellow*/
+  text-align:center;
+  font-family: 'Bungee', cursive;
+}
+.inputSubmit:hover{
+  color:white;
+}

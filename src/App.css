@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Bungee', cursive;
+
+}
+
+button{
+  width:120px;
+  height:50px;
+  border:1px solid #efe51a;/*yellow*/;
+  text-align:center;
+  font-family: 'Bungee', cursive;
+
+}
+
+button:hover{
+  background-color: #333842;
+  color:white;
+  }
