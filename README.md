@@ -1,5 +1,5 @@
 # BlockBuster  
-BlockBuster/BlockBuster.png  
+https://raw.githubusercontent.com/kicaUBUNTU/BlockBuster/master/BlockBuster.png  
 App where you can add, delete , search,sort and post comments about yours favorite movies.  
 Builted with React JS  
 Curently you can only try it localy because gh-pages dont suport react-router  
