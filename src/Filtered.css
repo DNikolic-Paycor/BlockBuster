@@ -1,27 +1,30 @@
-ul{
+.movies-ul{
   list-style-type: none;
   text-align: center;
   color:#efe51a;/*yellow*/;
 
 }
-li{
+.movies-li{
   background-color:#333842;
   display:inline-grid;
   padding: 10px;
   justify-content: space-between;
   border:1px solid #efe51a;
   text-align: center;
-
 }
-ul :hover{
+.movies-ul :hover{
   background-color:#efe51a;/*yellow*/;
   transition: .5s all ease;
   color:#333842;/*grey*/
 }
-img{
+
+.list-img{
   width:250px;
   height: 300px;
 }
 .deleteButton{
   margin:auto
+}
+.link{
+  color:#efe51a;
 }

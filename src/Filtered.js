@@ -1,25 +1,22 @@
-import React, { Component } from 'react';
-import './Filtered.css';
+import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
+import './Filtered.css'
 
 class Filtered extends Component {
-onClick(event){
-  this.props.setDeleteId();
-  this.props.deleteMovie();
-}
+
 render(){
-  var filterList = this.props.filtered.map((list, i) => {
-    return (<li key={i} ><img src={list.img}/> {list.name}<span>{list.year}</span>
-            <button className="deleteButton" onClick={(event)=>{this.props.deleteMovie(list.id,list.name);}}>Delete</button>
-    </li>);
-  });
-
-    return (
-        <ul>
-          {filterList}
-          </ul>
-
+  var filterList = this.props.filtered.map((list, i) =>{
+    return (<Link to={`/${list.name}`} key={i} className="link">
+              <li className="movies-li" onClick={()=>this.props.handleUrl(list.name,i)} ><img className="list-img" src={list.img} alt={list.name}/>{list.name}<span>{list.year}</span></li>
+             </Link>
+  )
+})
+return (
+  <ul className="movies-ul">
+    {filterList}
+  </ul>
     );
   }
 }
 
-export default Filtered;
+export default Filtered
